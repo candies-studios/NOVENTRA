@@ -20,7 +20,7 @@
   {"@context": "https://schema.org", "@type": "Organization", "name": "Noventra Ventures", "slogan": "Create value. Build what lasts.", "email": "hello@noventra-ventures.com", "address": {"@type": "PostalAddress", "streetAddress": "B.C. 130786, Ajman Free Zone C1 Building, Ajman Free Zone", "addressLocality": "Ajman", "addressCountry": "AE"}}
   </script>
 </head>
-<body class="page-inner">
+<body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="nv-symbol" viewBox="0 0 49.44 81.8">
       <path class="nv-ink" d="M0 81.8V23.37l11.68-7.19v56.63z"/>
@@ -57,24 +57,28 @@
 
   <main id="main">
     <!-- 01 Introduction -->
-    <section class="page-hero" aria-labelledby="page-title">
-      <div class="container page-hero__grid">
-        <div class="page-hero__text">
+    <section class="hero hero--page" id="top-hero" data-tone="light" aria-labelledby="page-title">
+      <div class="hero__media">
+        <picture>
+            <source type="image/webp" srcset="assets/img/who-700.webp 700w, assets/img/who-1200.webp 1200w, assets/img/who-1800.webp 1800w" sizes="(max-width: 960px) 100vw, 66vw">
+            <img src="assets/img/who-1800.jpg" srcset="assets/img/who-700.jpg 700w, assets/img/who-1200.jpg 1200w, assets/img/who-1800.jpg 1800w" sizes="(max-width: 960px) 100vw, 66vw" width="1800" height="1800" alt="Glass towers of Dubai’s business district in daylight" fetchpriority="high" style="object-position: 55% 50%">
+          </picture>
+      </div>
+      <div class="container">
+        <div class="hero__content">
           <p class="eyebrow"><span class="eyebrow__index">01</span> About Us</p>
-          <h1 class="display page-hero__title page-hero__title--long" id="page-title"><span>Built on Experience.</span><span>Driven by Possibility.</span></h1>
-          <div class="intro-copy">
-            <p class="lead">Noventra Ventures is a new-age venture founded by two college friends with a shared ambition to build businesses around expertise, opportunity and long-term value creation.</p>
-            <p class="body">Our journey combines entrepreneurial experience with a strong understanding of clients, markets and execution.</p>
-            <p class="body">Today, Noventra operates across two focused business verticals — Marketing and MEP Consulting for Real Estate Projects.</p>
-            <p class="body">We are intentionally focused, relationship-driven and committed to building businesses that stand the test of time.</p>
+          <h1 class="display hero__title hero__title--page" id="page-title"><span>Built on Experience.</span><span>Driven by Possibility.</span></h1>
+          <div class="hero__copy">
+            <p class="hero__lead">Noventra Ventures is a new-age venture founded by two college friends with a shared ambition to build businesses around expertise, opportunity and long-term value creation.</p>
+            <p class="hero__more">Our journey combines entrepreneurial experience with a strong understanding of clients, markets and execution.</p>
+            <p class="hero__more">Today, Noventra operates across two focused business verticals — Marketing and MEP Consulting for Real Estate Projects.</p>
+            <p class="hero__more">We are intentionally focused, relationship-driven and committed to building businesses that stand the test of time.</p>
           </div>
         </div>
-        <div class="page-hero__media">
-          <picture>
-            <source type="image/webp" srcset="assets/img/who-700.webp 700w, assets/img/who-1200.webp 1200w, assets/img/who-1800.webp 1800w" sizes="(max-width: 960px) 100vw, 45vw">
-            <img src="assets/img/who-1800.jpg" srcset="assets/img/who-700.jpg 700w, assets/img/who-1200.jpg 1200w, assets/img/who-1800.jpg 1800w" sizes="(max-width: 960px) 100vw, 45vw" width="1800" height="1800" alt="Glass towers of Dubai’s business district in daylight" fetchpriority="high" style="object-position: 50% 50%">
-          </picture>
-        </div>
+      </div>
+      <div class="hero__meta" aria-hidden="true">
+        <span class="scroll-cue"><i></i>Scroll</span>
+        <span class="coords">Noventra Ventures &nbsp;·&nbsp; UAE</span>
       </div>
     </section>
 

@@ -20,7 +20,7 @@
   {"@context": "https://schema.org", "@type": "Organization", "name": "Noventra Ventures", "slogan": "Create value. Build what lasts.", "email": "hello@noventra-ventures.com", "address": {"@type": "PostalAddress", "streetAddress": "B.C. 130786, Ajman Free Zone C1 Building, Ajman Free Zone", "addressLocality": "Ajman", "addressCountry": "AE"}}
   </script>
 </head>
-<body class="page-inner">
+<body>
   <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
     <symbol id="nv-symbol" viewBox="0 0 49.44 81.8">
       <path class="nv-ink" d="M0 81.8V23.37l11.68-7.19v56.63z"/>
@@ -57,23 +57,27 @@
 
   <main id="main">
     <!-- 01 Hero -->
-    <section class="page-hero" aria-labelledby="page-title">
-      <div class="container page-hero__grid">
-        <div class="page-hero__text">
+    <section class="hero hero--page" id="top-hero" data-tone="light" aria-labelledby="page-title">
+      <div class="hero__media">
+        <picture>
+            <source type="image/webp" srcset="assets/img/card-marketing-700.webp 700w, assets/img/card-marketing-1200.webp 1200w, assets/img/card-marketing-1800.webp 1800w" sizes="(max-width: 960px) 100vw, 66vw">
+            <img src="assets/img/card-marketing-1800.jpg" srcset="assets/img/card-marketing-700.jpg 700w, assets/img/card-marketing-1200.jpg 1200w, assets/img/card-marketing-1800.jpg 1800w" sizes="(max-width: 960px) 100vw, 66vw" width="1800" height="1200" alt="A marketing team planning around a sunlit table" fetchpriority="high" style="object-position: 35% 50%">
+          </picture>
+      </div>
+      <div class="container">
+        <div class="hero__content">
           <p class="eyebrow"><span class="eyebrow__index">01</span> Businesses · Marketing</p>
-          <h1 class="display page-hero__title page-hero__title--long" id="page-title"><span>Marketing That Moves</span><span>Business Forward.</span></h1>
-          <div class="intro-copy">
-            <p class="lead">In a crowded marketplace, visibility is not enough.</p>
-            <p class="body">We help businesses build stronger brands, sharper communication and more meaningful connections with their audiences.</p>
-            <p class="body">Noventra combines strategic thinking, creative communication and practical execution to help businesses move forward.</p>
+          <h1 class="display hero__title hero__title--page" id="page-title"><span>Marketing That Moves</span><span>Business Forward.</span></h1>
+          <div class="hero__copy">
+            <p class="hero__lead">In a crowded marketplace, visibility is not enough.</p>
+            <p class="hero__more">We help businesses build stronger brands, sharper communication and more meaningful connections with their audiences.</p>
+            <p class="hero__more">Noventra combines strategic thinking, creative communication and practical execution to help businesses move forward.</p>
           </div>
         </div>
-        <div class="page-hero__media">
-          <picture>
-            <source type="image/webp" srcset="assets/img/card-marketing-700.webp 700w, assets/img/card-marketing-1200.webp 1200w, assets/img/card-marketing-1800.webp 1800w" sizes="(max-width: 960px) 100vw, 45vw">
-            <img src="assets/img/card-marketing-1800.jpg" srcset="assets/img/card-marketing-700.jpg 700w, assets/img/card-marketing-1200.jpg 1200w, assets/img/card-marketing-1800.jpg 1800w" sizes="(max-width: 960px) 100vw, 45vw" width="1800" height="1319" alt="Angular metal facade against a pale sky" fetchpriority="high" style="object-position: 50% 50%">
-          </picture>
-        </div>
+      </div>
+      <div class="hero__meta" aria-hidden="true">
+        <span class="scroll-cue"><i></i>Scroll</span>
+        <span class="coords">Noventra Ventures &nbsp;·&nbsp; UAE</span>
       </div>
     </section>
 

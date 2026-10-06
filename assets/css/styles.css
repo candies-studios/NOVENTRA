@@ -951,3 +951,34 @@ main [id] { scroll-margin-top: 76px; }
 .cta__media img { opacity: 1; }
 .cta__media::after { background: linear-gradient(90deg, rgba(11,16,21,.25) 0%, rgba(11,16,21,.55) 55%, var(--ink-deep) 100%), linear-gradient(180deg, var(--ink-deep) 0%, rgba(11,16,21,0) 18%, rgba(11,16,21,0) 82%, var(--ink-deep) 100%); }
 .contact--page .cta__media img { opacity: .55; }
+
+/* ---------- Inner-page hero: same composition as the home hero ---------- */
+.hero--page .hero__content { max-width: 600px; }
+.hero__title--page { font-size: clamp(2.7rem, 5.2vw, 5.1rem); line-height: 1; }
+.hero__copy { display: grid; gap: 14px; margin-top: 36px; max-width: 34em; }
+.hero__copy .hero__lead { margin-top: 0; }
+.hero__copy .hero__more { margin-top: 0; }
+.hero__tagline--stack { flex-direction: column; gap: 6px; margin-top: 10px; font: 300 clamp(1.15rem, 1.6vw, 1.4rem)/1.35 var(--font-display); letter-spacing: -0.01em; text-transform: none; }
+.hero__tagline--stack span + span::before { display: none; }
+.hero__tagline--stack span:last-child { color: var(--gold); }
+.hero__copy .hero__actions { margin-top: 18px; }
+.hero--page .hero__media::before {
+  background:
+    linear-gradient(90deg, var(--ivory) 0%, rgba(247,244,238,.92) 16%, rgba(247,244,238,.5) 36%, rgba(247,244,238,0) 56%),
+    linear-gradient(180deg, rgba(247,244,238,.55) 0%, rgba(247,244,238,0) 22%);
+}
+.contact--details { padding-block: var(--section-y); background: var(--ink); color: var(--on-dark); }
+.contact--details .office { margin-top: 28px; }
+.contact--details .office__name { font: 300 clamp(1.8rem, 3vw, 2.6rem)/1.1 var(--font-display); letter-spacing: .02em; text-transform: none; }
+.contact--details .contact__grid { align-items: start; }
+@media (max-width: 960px) {
+  .hero--page .hero__media::before {
+    background: linear-gradient(180deg, rgba(247,244,238,.6) 0%, rgba(247,244,238,0) 22%, rgba(247,244,238,0) 62%, var(--ivory) 100%);
+  }
+}
+@media (max-width: 600px) {
+  .hero__title--page { font-size: clamp(2.3rem, 11vw, 3.2rem); }
+}
+@media (max-width: 960px) {
+  .hero--page .hero__content { margin-top: -40px; }
+}

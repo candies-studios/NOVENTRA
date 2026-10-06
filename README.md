@@ -37,10 +37,10 @@ Real photography (Unsplash licence: free for commercial use, no attribution requ
 | File | Photo | Used on |
 |---|---|---|
 | hero-900/1600/2400 | Burj Khalifa over Downtown Dubai | Home hero, Marketing page |
-| who-700/1200/1800 | Dubai business district towers | Who We Are, About Us header |
-| card-marketing-700/1200/1800 | Angular metal facade | Marketing card + Marketing header |
-| card-mep-700/1200/1800 | Rooftop HVAC units | MEP card + MEP header |
-| approach-700/1200/1800 | Burj Khalifa & boulevard at dusk | Our Approach, MEP page |
-| cta-1000/1600 | Angular facade (dark crop) | "Have an opportunity" band, Contact |
+| who-700/1200/1800 | Dubai business district towers | Who We Are, About Us page hero |
+| card-marketing-700/1200/1800 | Marketing team planning at a table | Marketing card + Marketing page hero |
+| card-mep-700/1200/1800 | Rooftop HVAC units | MEP card + MEP page hero |
+| approach-700/1200/1800 | Burj Khalifa & boulevard at dusk | Our Approach, MEP page, Contact page hero |
+| cta-1000/1600 | Angular facade (dark crop) | "Have an opportunity" band |
 
 To swap a photo, replace the files keeping the same names and sizes.
