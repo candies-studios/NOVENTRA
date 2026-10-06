@@ -36,7 +36,8 @@ Real photography (Unsplash licence: free for commercial use, no attribution requ
 
 | File | Photo | Used on |
 |---|---|---|
-| hero-900/1600/2400 | Burj Khalifa over Downtown Dubai | Home hero, Marketing page |
+| hero-900/1600/2400 | Burj Khalifa over Downtown Dubai | Home hero |
+| aerial-700/1200/1800 | Aerial view of Downtown Dubai & Business Bay | Marketing page: Who We Work With |
 | who-700/1200/1800 | Dubai business district towers | Who We Are, About Us page hero |
 | card-marketing-700/1200/1800 | Marketing team planning at a table | Marketing card + Marketing page hero |
 | card-mep-700/1200/1800 | Rooftop HVAC units | MEP card + MEP page hero |
