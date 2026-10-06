@@ -946,3 +946,8 @@ main [id] { scroll-margin-top: 76px; }
   .footer__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .footer__brand { grid-column: 1 / -1; }
 }
+
+/* Real photography tuning */
+.cta__media img { opacity: 1; }
+.cta__media::after { background: linear-gradient(90deg, rgba(11,16,21,.25) 0%, rgba(11,16,21,.55) 55%, var(--ink-deep) 100%), linear-gradient(180deg, var(--ink-deep) 0%, rgba(11,16,21,0) 18%, rgba(11,16,21,0) 82%, var(--ink-deep) 100%); }
+.contact--page .cta__media img { opacity: .55; }

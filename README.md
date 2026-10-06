@@ -32,15 +32,15 @@ For a custom domain, add a `CNAME` file containing the domain and point the DNS 
 - Insights and Capabilities copy is draft text written to the brand voice; review before launch.
 
 ## Imagery
-The architectural images were taken from the approved reference design, cleaned and upscaled. Before launch, replace them with licensed or commissioned photography of the same subjects, keeping the same filenames and sizes:
+Real photography (Unsplash licence: free for commercial use, no attribution required), cropped and exported for each slot in three sizes as `.jpg` and `.webp`:
 
-| File | Use | Size |
+| File | Photo | Used on |
 |---|---|---|
-| hero-1600 / hero-900 | Hero — Downtown Dubai skyline | 1588 × 1452 |
-| who-1200 / who-700 | Who We Are — terrace framing the skyline | 1200 × 1175 |
-| card-marketing-* | Marketing panel | 1200 × 828 |
-| card-mep-* | MEP Consulting panel | 1200 × 828 |
-| approach-* | Our Approach — towers from street level | 1200 × 1088 |
-| cta-1000 | Contact section — abstract architectural detail | 1000 × 690 |
+| hero-900/1600/2400 | Burj Khalifa over Downtown Dubai | Home hero, Marketing page |
+| who-700/1200/1800 | Dubai business district towers | Who We Are, About Us header |
+| card-marketing-700/1200/1800 | Angular metal facade | Marketing card + Marketing header |
+| card-mep-700/1200/1800 | Rooftop HVAC units | MEP card + MEP header |
+| approach-700/1200/1800 | Burj Khalifa & boulevard at dusk | Our Approach, MEP page |
+| cta-1000/1600 | Angular facade (dark crop) | "Have an opportunity" band, Contact |
 
-Provide each as `.jpg` and `.webp`.
+To swap a photo, replace the files keeping the same names and sizes.
