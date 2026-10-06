@@ -336,7 +336,7 @@ main [id] { scroll-margin-top: 76px; }
 .who__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 760px; }
 .who__text {
   display: flex; flex-direction: column; justify-content: center;
-  padding: var(--section-y) clamp(32px, 6vw, 112px) var(--section-y) max(var(--gutter), calc((100vw - var(--maxw)) / 2));
+  padding: var(--section-y) clamp(32px, 6vw, 112px) var(--section-y) max(var(--gutter), calc(100% - var(--maxw) / 2));
 }
 .who__text .h2 { margin-top: 36px; }
 .who__text .rule-gold { margin: 40px 0; }
@@ -429,7 +429,7 @@ main [id] { scroll-margin-top: 76px; }
 .approach__grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); min-height: 820px; }
 .approach__text {
   display: flex; flex-direction: column; justify-content: center;
-  padding: var(--section-y) clamp(32px, 6vw, 112px) var(--section-y) max(var(--gutter), calc((100vw - var(--maxw)) / 2));
+  padding: var(--section-y) clamp(32px, 6vw, 112px) var(--section-y) max(var(--gutter), calc(100% - var(--maxw) / 2));
 }
 .approach__title { margin-top: 40px; font-size: var(--fs-display); text-transform: uppercase; color: var(--on-dark); }
 .approach__title span { display: block; }
@@ -981,4 +981,113 @@ main [id] { scroll-margin-top: 76px; }
 }
 @media (max-width: 960px) {
   .hero--page .hero__content { margin-top: -40px; }
+}
+
+
+/* =========================================================================
+   Device compatibility pass — phones, tablets, laptops, desktops and TVs
+   ========================================================================= */
+
+/* Legible minimum text size (≥ 11.5px) */
+.indicator a { font-size: .72rem; }
+.indicator a::before { font-size: .7rem; }
+.hero__meta { font-size: .72rem; }
+.card__index em { font-size: .72rem; }
+.sequence { font-size: .72rem; }
+.dropdown a span { font-size: .72rem; }
+.logo__sub { font-size: .56rem; }
+
+/* Header never pushes the page wider than the screen */
+.site-header__inner { min-width: 0; max-width: 100%; }
+.nav { min-width: 0; }
+
+/* Desktop / laptop: keep the nav row from squeezing */
+@media (min-width: 961px) {
+  .nav { flex: 0 0 auto; }
+}
+@media (min-width: 961px) and (max-width: 1180px) {
+  .nav__list { gap: 26px; }
+}
+
+/* Small laptops and tablets in landscape: give the hero text clear ivory space */
+@media (min-width: 961px) and (max-width: 1279px) {
+  .hero__media { width: 58%; }
+  .hero__media::before, .hero--page .hero__media::before {
+    background:
+      linear-gradient(90deg, var(--ivory) 0%, rgba(247,244,238,.92) 18%, rgba(247,244,238,.55) 40%, rgba(247,244,238,0) 64%),
+      linear-gradient(180deg, rgba(247,244,238,.55) 0%, rgba(247,244,238,0) 22%);
+  }
+  .hero__content, .hero--page .hero__content { max-width: 480px; }
+  .hero__title { font-size: clamp(3rem, 7vw, 5.2rem); }
+  .hero__title--page { font-size: clamp(2.5rem, 4.6vw, 3.6rem); }
+}
+
+/* Tablets in portrait and large phones in landscape: logo and tabs on one row */
+@media (min-width: 701px) and (max-width: 960px) {
+  .site-header__inner, .site-header.is-scrolled .site-header__inner {
+    flex-wrap: nowrap; height: 76px; padding-block: 0; gap: 24px;
+  }
+  .site-header .logo { padding-bottom: 6px; }
+  .nav { flex: 0 1 auto; display: block; border-top: 0; overflow: visible; }
+  .nav__list { width: auto; min-width: 0; justify-content: flex-end; gap: clamp(18px, 3.2vw, 32px); }
+  .nav__link { padding: 10px 0; font-size: .72rem; letter-spacing: .14em; }
+  .nav__link::after { bottom: 2px; }
+  .dropdown { position: absolute; top: calc(100% + 14px); left: auto; right: -24px; min-width: 250px; }
+  main [id] { scroll-margin-top: 84px; }
+  .page-hero { padding-top: calc(76px + 48px); }
+}
+
+/* Phones (portrait): tab row under the logo, sized to always fit */
+@media (max-width: 700px) {
+  .nav__list { width: 100%; min-width: 0; }
+}
+@media (max-width: 480px) {
+  .nav__link { font-size: .7rem; letter-spacing: .06em; }
+}
+@media (max-width: 359px) {
+  .nav__list { gap: 6px; }
+  .nav__link { font-size: .66rem; letter-spacing: .03em; }
+  .nav__link .chev { width: 7px; }
+  .eyebrow { letter-spacing: .2em; gap: 10px; }
+  .eyebrow::before { width: 22px; }
+}
+
+/* Phones in landscape and other short screens: side-by-side hero like desktop */
+@media (max-width: 960px) and (orientation: landscape) and (max-height: 540px) {
+  .hero { display: flex; align-items: center; min-height: 100svh; padding: calc(76px + 20px) 0 28px; }
+  .hero__media { position: absolute; top: 0; right: 0; bottom: 0; width: 52%; height: auto; min-height: 0; }
+  .hero__media::before, .hero--page .hero__media::before {
+    background: linear-gradient(90deg, var(--ivory) 0%, rgba(247,244,238,.85) 18%, rgba(247,244,238,.35) 45%, rgba(247,244,238,0) 70%);
+  }
+  .hero__content, .hero--page .hero__content { margin-top: 0; padding-inline: 0; max-width: 54%; }
+  .hero__title, .hero__title--page { font-size: clamp(2rem, 6.4vw, 3rem); }
+  .hero__lead { margin-top: 18px; font-size: .95rem; }
+  .hero__more, .hero__copy .hero__more { font-size: .88rem; }
+  .hero__copy { margin-top: 18px; gap: 8px; }
+  .hero__tagline { margin-top: 16px; }
+  .hero__actions { margin-top: 20px; flex-direction: row; }
+  .hero__content .eyebrow { margin-bottom: 14px; }
+}
+
+/* Large desktop monitors */
+@media (min-width: 1800px) {
+  :root { --maxw: 1520px; }
+}
+
+/* 2K / 4K screens and TVs: scale the whole layout up so it reads from a distance */
+@media (min-width: 2200px) { html { zoom: 1.2; } }
+@media (min-width: 2500px) { html { zoom: 1.35; } }
+@media (min-width: 3000px) { html { zoom: 1.65; } }
+@media (min-width: 3600px) { html { zoom: 2; } }
+
+/* Very narrow phones: keep long uppercase display words inside the screen */
+@media (max-width: 420px) {
+  .vapproach__title, .approach__title, .philosophy__title { font-size: clamp(2rem, 10.5vw, 2.8rem); }
+  .hero__title--page { font-size: clamp(2.1rem, 10.5vw, 3.2rem); }
+}
+.details dd a { display: inline-block; padding-block: 8px; margin-block: -8px; }
+
+@media (max-width: 420px) {
+  .eyebrow { letter-spacing: .18em; }
+  .hero__content .eyebrow { letter-spacing: .22em; }
 }

@@ -1,6 +1,6 @@
 # Noventra Ventures — Website
 
-Static homepage for Noventra Ventures (Dubai, UAE). No build step, no backend, no dependencies beyond Google Fonts (Manrope + Inter).
+Static website for Noventra Ventures (UAE). No build step, no backend, no dependencies beyond Google Fonts (Manrope + Inter).
 
 ## Structure
 ```
@@ -18,6 +18,13 @@ Navigation: NOVENTRA (logo) | Home | About Us | Businesses ▾ (Marketing, MEP C
 Footer: brand + "Building Ideas. Creating Value." | Businesses | Company.
 
 The header and footer are repeated in each HTML file. When you change a tab or footer link, update it in all five files.
+
+## Device support
+Tested at 320, 360 and 390px phones (portrait and landscape), 768px tablets, 1024px tablets in landscape, 1280–1440px laptops, 1920px desktops, and 2560px / 3840px (2K / 4K) screens and TVs.
+- Phones: logo with the tab row underneath; the Businesses menu opens on tap.
+- Phones in landscape: side-by-side hero, as on desktop.
+- Tablets: logo and tabs on one row.
+- 2K and 4K screens: the whole layout scales up so it stays readable from a distance.
 
 ## Deploy to GitHub Pages
 1. Create a repository and upload the contents of this folder (keep `index.html` at the root).
