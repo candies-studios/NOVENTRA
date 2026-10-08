@@ -1091,3 +1091,47 @@ main [id] { scroll-margin-top: 76px; }
   .eyebrow { letter-spacing: .18em; }
   .hero__content .eyebrow { letter-spacing: .22em; }
 }
+
+/* ---------- Feature band: hero-style photo, mirrored (image left, fades to the right) ---------- */
+.capabilities--feature { padding-top: 0; }
+.feature-band {
+  position: relative; isolation: isolate; display: flex; align-items: center;
+  min-height: clamp(480px, 46vw, 760px); margin-bottom: clamp(56px, 7vw, 104px); overflow: hidden;
+}
+.feature-band__media { position: absolute; z-index: -1; top: 0; bottom: 0; left: 0; width: 66%; }
+.feature-band__media picture, .feature-band__media img { width: 100%; height: 100%; }
+.feature-band__media img { object-fit: cover; }
+.feature-band__media::after {
+  content: ""; position: absolute; inset: 0;
+  background:
+    linear-gradient(270deg, var(--white) 0%, rgba(255,255,255,.88) 14%, rgba(255,255,255,.4) 34%, rgba(255,255,255,0) 54%),
+    linear-gradient(0deg, var(--white) 0%, rgba(255,255,255,0) 18%),
+    linear-gradient(180deg, rgba(255,255,255,.5) 0%, rgba(255,255,255,0) 14%);
+}
+.feature-band__inner { display: flex; justify-content: flex-end; }
+.feature-band__text { width: min(100%, 540px); display: grid; gap: 0; }
+.feature-band__text .h2 { margin-top: 32px; }
+.feature-band__text .lead { margin-top: 32px; }
+
+@media (min-width: 961px) and (max-width: 1279px) {
+  .feature-band__media { width: 60%; }
+  .feature-band__text { width: min(100%, 440px); }
+}
+@media (max-width: 960px) {
+  .feature-band { display: block; min-height: 0; margin-bottom: 48px; }
+  .feature-band__media { position: relative; width: 100%; height: clamp(300px, 62vw, 520px); }
+  .feature-band__media::after {
+    background:
+      linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 55%, var(--white) 100%),
+      linear-gradient(180deg, rgba(255,255,255,.45) 0%, rgba(255,255,255,0) 18%);
+  }
+  .feature-band__inner { display: block; margin-top: -48px; position: relative; }
+  .feature-band__text { width: 100%; }
+}
+@media (max-width: 960px) and (orientation: landscape) and (max-height: 540px) {
+  .feature-band { display: flex; min-height: 100svh; }
+  .feature-band__media { position: absolute; width: 58%; height: auto; }
+  .feature-band__media::after { background: linear-gradient(270deg, var(--white) 0%, rgba(255,255,255,.85) 18%, rgba(255,255,255,.3) 45%, rgba(255,255,255,0) 66%); }
+  .feature-band__inner { display: flex; margin-top: 0; }
+  .feature-band__text { width: 46%; }
+}

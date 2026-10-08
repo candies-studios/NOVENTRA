@@ -48,6 +48,7 @@ Real photography (Unsplash licence: free for commercial use, no attribution requ
 | who-700/1200/1800 | Dubai business district towers | Who We Are, About Us page hero |
 | card-marketing-700/1200/1800 | Marketing team planning at a table | Home page Marketing card |
 | marketing-hero-700/1200/1672 | Laptop and phone with a digital campaign | Marketing page hero |
+| marketing-studio-700/1200/1672 | Strategy wall, camera and event studio | Marketing page: From Strategy to Execution |
 | card-mep-700/1200/1800 | Rooftop HVAC units | MEP card + MEP page hero |
 | approach-700/1200/1800 | Burj Khalifa & boulevard at dusk | Our Approach, MEP page, Contact page hero |
 | cta-1000/1600 | Angular facade (dark crop) | "Have an opportunity" band |
