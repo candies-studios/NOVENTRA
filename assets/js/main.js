@@ -73,7 +73,7 @@
   }
 
   /* ---------- Contact page: preselect topic from link (#marketing, #mep, #venture) ---------- */
-  var topicMap = { marketing: 'topic-marketing', mep: 'topic-mep', venture: 'topic-venture' };
+  var topicMap = { marketing: 'topic-marketing', mep: 'topic-mep', funding: 'topic-funding', venture: 'topic-venture' };
   var preset = topicMap[(window.location.hash || '').replace('#', '')];
   if (preset && document.getElementById(preset)) document.getElementById(preset).checked = true;
 

@@ -8,16 +8,17 @@ index.html              Home (Hero · Who We Are · Our Businesses · Our Approa
 about.html              About Us — introduction, story, the partners, philosophy
 marketing.html          Marketing — hero, what we do, approach, who we work with
 mep.html                MEP Consulting — hero, expertise, approach, real estate focus
+venture-capital.html    Venture Capital & Fundraising — hero, what we do, approach, who we work with, CTA
 contact.html            Contact — enquiry form + company address
 assets/css/styles.css   Design tokens (brand palette, type scale, grid) + all components
 assets/js/main.js       Header state, Businesses dropdown, home section indicator, enquiry form, scroll reveals
 assets/img/             Noventra symbol (SVG, from the brand guidelines) and responsive JPG/WebP imagery
 ```
 
-Navigation: NOVENTRA (logo) | Home | About Us | Businesses ▾ (Marketing, MEP Consulting) | Contact.
+Navigation: NOVENTRA (logo) | Home | About Us | Businesses ▾ (Marketing, MEP Consulting, Venture Capital & Fundraising) | Contact.
 Footer: brand + "Building Ideas. Creating Value." | Businesses | Company.
 
-The header and footer are repeated in each HTML file. When you change a tab or footer link, update it in all five files.
+The header and footer are repeated in each HTML file. When you change a tab or footer link, update it in all six files.
 
 ## Device support
 Tested at 320, 360 and 390px phones (portrait and landscape), 768px tablets, 1024px tablets in landscape, 1280–1440px laptops, 1920px desktops, and 2560px / 3840px (2K / 4K) screens and TVs.
